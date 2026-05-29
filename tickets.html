@@ -1,81 +1,129 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickets Registrados</title>
+    <meta name="description" content="Listado de tickets registrados en el sistema Help Desk">
+    <title>Tickets Registrados - Help Desk</title>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header>
 
-        <h1>Listado de Tickets</h1>
+        <h1>Sistema Help Desk</h1>
 
-        <nav>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav aria-label="Menú principal">
+
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="reportar.html">Reportar</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="reportar.html">
+                        Reportar Incidente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tickets.html">
+                        Tickets Registrados
+                    </a>
+                </li>
             </ul>
+
         </nav>
 
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
         <section>
 
-            <h2>Tickets Reportados</h2>
+            <h2>Listado de Tickets Reportados</h2>
 
-            <table border="1">
+            <article>
 
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Usuario</th>
-                        <th>Tipo</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
+                <h3>Tabla de Incidentes</h3>
 
-                <tbody>
+                <table>
 
-                    <tr>
-                        <td>001</td>
-                        <td>Ana Panchana</td>
-                        <td>Software</td>
-                        <td>Abierto</td>
-                    </tr>
+                    <caption>
+                        Registro de incidentes técnicos reportados
+                    </caption>
 
-                    <tr>
-                        <td>002</td>
-                        <td>Carla Ruiz</td>
-                        <td>Red</td>
-                        <td>En Proceso</td>
-                    </tr>
+                    <thead>
 
-                    <tr>
-                        <td>003</td>
-                        <td>Mario Torres</td>
-                        <td>Hardware</td>
-                        <td>Cerrado</td>
-                    </tr>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Tipo de Incidente</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Prioridad</th>
+                        </tr>
 
-                </tbody>
+                    </thead>
 
-            </table>
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>Ana López</td>
+                            <td>Software</td>
+                            <td>Abierto</td>
+                            <td>Alta</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>Carlos Ruiz</td>
+                            <td>Red</td>
+                            <td>En Proceso</td>
+                            <td>Media</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>María Torres</td>
+                            <td>Hardware</td>
+                            <td>Cerrado</td>
+                            <td>Baja</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr>
+                            <td colspan="5">
+                                Total de tickets registrados: 3
+                            </td>
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </article>
 
         </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>Proyecto desarrollado con HTML5 semántico</p>
+
+        <p>
+            © 2026 Proyecto Help Desk HTML5 - Unidad 2
+        </p>
+
     </footer>
 
 </body>
-</html>
-```
 
+</html>
