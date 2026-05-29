@@ -1,132 +1,125 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportar Incidente</title>
+    <title>Reportar Incidente - Help Desk</title>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header>
-        <h1>Reportar Incidente</h1>
+        <h1>Sistema Help Desk</h1>
 
+        <!-- MENÚ DE NAVEGACIÓN -->
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="reportar.html">Reportar</a></li>
+                <li><a href="reportar.html">Reportar Incidente</a></li>
                 <li><a href="tickets.html">Tickets</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
         <section>
+            <h2>Formulario de Reporte de Incidentes</h2>
 
-            <h2>Formulario de Reporte</h2>
+            <article>
 
-            <form action="#" method="post">
+                <form action="#" method="post">
 
-                <fieldset>
+                    <!-- NOMBRE -->
+                    <p>
+                        <label for="nombre">Nombre Completo:</label><br>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre"
+                            placeholder="Ingrese su nombre"
+                            required
+                            minlength="3"
+                            maxlength="50">
+                    </p>
 
-                    <legend>Información del Usuario</legend>
+                    <!-- CORREO -->
+                    <p>
+                        <label for="correo">Correo Electrónico:</label><br>
+                        <input 
+                            type="email" 
+                            id="correo" 
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required>
+                    </p>
 
-                    <label for="nombre">Nombre Completo:</label>
-                    <input 
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        required
-                        minlength="3"
-                    >
+                    <!-- PRIORIDAD -->
+                    <p>
+                        <label for="prioridad">Prioridad del Incidente:</label><br>
 
-                    <br><br>
+                        <select id="prioridad" name="prioridad" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Media</option>
+                            <option value="baja">Baja</option>
+                        </select>
+                    </p>
 
-                    <label for="correo">Correo Electrónico:</label>
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        required
-                    >
+                    <!-- FECHA -->
+                    <p>
+                        <label for="fecha">Fecha del Incidente:</label><br>
 
-                    <br><br>
+                        <input 
+                            type="date" 
+                            id="fecha" 
+                            name="fecha"
+                            required>
+                    </p>
 
-                    <label for="departamento">Departamento:</label>
+                    <!-- DESCRIPCIÓN -->
+                    <p>
+                        <label for="descripcion">Descripción del Problema:</label><br>
 
-                    <select id="departamento" name="departamento" required>
-                        <option value="">Seleccione</option>
-                        <option value="soporte">Soporte</option>
-                        <option value="redes">Redes</option>
-                        <option value="desarrollo">Desarrollo</option>
-                    </select>
+                        <textarea 
+                            id="descripcion" 
+                            name="descripcion"
+                            rows="6"
+                            cols="40"
+                            placeholder="Describa el incidente..."
+                            required
+                            minlength="10"></textarea>
+                    </p>
 
-                </fieldset>
+                    <!-- BOTÓN -->
+                    <p>
+                        <button type="submit">
+                            Enviar Reporte
+                        </button>
 
-                <br>
+                        <button type="reset">
+                            Limpiar Formulario
+                        </button>
+                    </p>
 
-                <fieldset>
+                </form>
 
-                    <legend>Detalle del Incidente</legend>
-
-                    <label for="tipo">Tipo de Problema:</label>
-
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Seleccione</option>
-                        <option value="hardware">Hardware</option>
-                        <option value="software">Software</option>
-                        <option value="conexion">Conexión</option>
-                    </select>
-
-                    <br><br>
-
-                    <label for="fecha">Fecha del Incidente:</label>
-
-                    <input
-                        type="date"
-                        id="fecha"
-                        name="fecha"
-                        required
-                    >
-
-                    <br><br>
-
-                    <label for="descripcion">
-                        Descripción del Problema:
-                    </label>
-
-                    <br>
-
-                    <textarea
-                        id="descripcion"
-                        name="descripcion"
-                        rows="6"
-                        cols="40"
-                        required
-                        minlength="10"
-                    ></textarea>
-
-                </fieldset>
-
-                <br>
-
-                <button type="submit">
-                    Enviar Reporte
-                </button>
-
-            </form>
+            </article>
 
         </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>Sistema Help Desk HTML5</p>
+        <p>
+            © 2026 Sistema Help Desk HTML5 - Proyecto Académico
+        </p>
     </footer>
 
 </body>
-</html>
-```
 
+</html>
