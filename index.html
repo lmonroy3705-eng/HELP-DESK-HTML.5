@@ -1,54 +1,91 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema Help Desk para gestión de incidentes técnicos">
     <title>Help Desk - Inicio</title>
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header>
+
         <h1>Sistema Help Desk</h1>
 
-        <nav>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav aria-label="Menú principal">
+
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="reportar.html">Reportar Incidente</a></li>
-                <li><a href="tickets.html">Tickets Registrados</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="reportar.html">
+                        Reportar Incidente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tickets.html">
+                        Tickets Registrados
+                    </a>
+                </li>
             </ul>
+
         </nav>
+
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
+        <!-- SECCIÓN DE BIENVENIDA -->
         <section>
-            <h2>Bienvenido</h2>
+
+            <h2>Bienvenido al Sistema</h2>
 
             <p>
-                Este sistema permite registrar y consultar incidentes
-                técnicos reportados por los usuarios.
+                Este sistema permite registrar, consultar y realizar
+                seguimiento de incidentes técnicos reportados por los usuarios.
             </p>
+
         </section>
 
-        <article>
+        <!-- INFORMACIÓN DE SERVICIOS -->
+        <section>
+
             <h2>Servicios Disponibles</h2>
 
-            <ul>
-                <li>Registro de incidentes</li>
-                <li>Consulta de tickets</li>
-                <li>Seguimiento de problemas</li>
-            </ul>
-        </article>
+            <article>
+
+                <h3>Gestión de Incidentes</h3>
+
+                <ul>
+                    <li>Registro de incidentes técnicos</li>
+                    <li>Consulta de tickets registrados</li>
+                    <li>Seguimiento de problemas reportados</li>
+                    <li>Control de prioridades</li>
+                </ul>
+
+            </article>
+
+        </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>Proyecto HTML5 - Unidad 2</p>
+
+        <p>
+            © 2026 Proyecto Help Desk HTML5 - Unidad 2
+        </p>
+
     </footer>
 
 </body>
-</html>
-```
 
+</html>
